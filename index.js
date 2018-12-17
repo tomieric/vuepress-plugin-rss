@@ -29,7 +29,7 @@ module.exports = (pluginOptions, ctx) => {
         .map(page => ({
           title: page.frontmatter.title,
           description: page.excerpt,
-          url: `${pluginOptions.site_url}${page.path}`,
+          url: `${pluginOptions.site_url}${ctx.base}${page.path}`,
           date: page.date,
         }))
         .slice(0, count)
