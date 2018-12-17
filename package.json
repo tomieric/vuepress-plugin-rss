@@ -1,11 +1,19 @@
 {
-  "name": "vuepress-plugin-rss",
+  "name": "@tomieric/vuepress-plugin-rss",
   "version": "1.0.0",
   "main": "index.js",
   "author": "SangND",
-  "repository": "https://github.com/dacsang97/vuepress-plugin-rss.git",
+  "scripts": {
+    "prepare": "npm version patch"
+  },
+  "contributors": [
+    "SangND",
+    "tomieric"
+  ],
+  "repository": "https://github.com/tomieric/vuepress-plugin-rss.git",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.1",
     "fs-extra": "^5.0.0",
     "rss": "^1.2.2"
   }
