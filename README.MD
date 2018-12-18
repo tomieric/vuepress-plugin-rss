@@ -10,6 +10,8 @@
 > npm i @tomieric/vuepress-plugin-rss@next -D
 ```
 
+Has been merged into [vuepress-plugin-rss](https://github.com/youngtailors/vuepress-plugin-rss)
+
 ## Config for your site
 
 * Update your `.vuepress/config.js`
@@ -19,7 +21,7 @@ module.exports = {
     plugins: [
       ['@tomieric/vuepress-plugin-rss',
         {
-          base_url: '/', // required
+          // base_url: '/', // required
           site_url: 'https://coralo.io', // required
           copyright: '2018 Coralo', // optional
           // filter some post
@@ -31,5 +33,12 @@ module.exports = {
     ]
 }
 ```
+
+## Contributors
+
+- Core Plugin - [dacsang97](https://github.com/dacsang97)
+- Support Vuepress 1.0 - [tomieric](https://github.com/tomieric)
+
+---
 
 License MIT
