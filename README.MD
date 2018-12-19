@@ -19,11 +19,12 @@ module.exports = {
     plugins: [
       ['vuepress-plugin-rss',
         {
-          base_url: '/', // required
+          // base: '/blog/', It's set to 'https://coralo.io/blog'
           site_url: 'https://coralo.io', // required
           copyright: '2018 Coralo', // optional
           // filter some post
-          filter: (frontmatter) => { return [true|false] },
+          // filter : (page) => {}
+          filter: ({ frontmatter }) => { return true },
           // How much articles
           count: 20
         }
